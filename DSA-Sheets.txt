@@ -4,12 +4,30 @@ https://takeuforward.org/interview-experience/strivers-cp-sheet/?utm_source=yout
 Pattern DSA sheet :
 https://learnyard.com/practice/dsa
 
-Love babbar Sheet:
-https://www.geeksforgeeks.org/dsa/dsa-sheet-by-love-babbar/
-
-
-Striver SDE Sheet:
-https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems
-
 Algomaster
 https://algomaster.io/practice/dsa-patterns
+
+
+Revision Topics :
+
+Greedy
+Heaps
+Math & Prime Number
+Stack and Queue
+Searching
+Sorting
+Prefix Sum
+Sliding Window 
+
+Recursion
+
+
+Topics left to learn in DSA : 
+Tree
+Greedy
+DP
+Graph
+Tries
+Backtracking
+Segment tree
+Bit Manipulation
