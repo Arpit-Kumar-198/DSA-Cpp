@@ -1,4 +1,4 @@
-# Arpit-Kumar-ABES-DSA
+# DSA-Cpp
 
 Welcome to my **Data Structures & Algorithms (DSA)** repository!  
 This is a collection of everything I’ve practiced and learned over the past **1.5 years**, along with the work I’ll continue to add in the future.  
