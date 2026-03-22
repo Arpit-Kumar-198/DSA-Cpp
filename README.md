@@ -54,7 +54,7 @@ This is a collection of everything I’ve practiced and learned over the past **
 </p>
 
 <p align="start">
-  🟠 <b>LeetCode:</b> 300+ Problems Solved <br>
+  🟠 <b>LeetCode:</b> 300+ Problems Solved <br><br>
   🟤 <b>CodeChef:</b> 2⭐ Coder
 </p>
 
