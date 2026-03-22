@@ -13,18 +13,50 @@ This is a collection of everything I’ve practiced and learned over the past **
 - **What’s Inside**  
   The repository is organized topic-wise, including:
   - `Arrays`
+  - `Strings`, `Functions`, `Pointers`
+  - `Pattern Printing`, `Math & Prime Numbers`
+  
+  - `Searching`, `Sorting`
+  - `Prefix Sum`, `Sliding Window`, `Two Pointer`, `Bit Manipulation`
+  
   - `LinkedList`
-  - `Recursion`
-  - `Dynamic Programming (DP)`
-  - `Graphs`, `Heaps`, `Greedy`, `Searching`, `Sorting`
+  - `Stack`, `Queue`
+  - `Maps and Sets`
   - `Trees` (Binary Tree, BST)
-  - `OOP Concepts`, `Functions`, `Pointers`
-  - `STL` (C++ Standard Template Library)
-  - `Pattern Printing`, `Math & Prime Numbers`, and more.
-  - Extra resources like `DSA-Sheets.txt` and `Aptitude-Topics.txt`
+  - `Heaps`
+  - `Graphs`
+  
+  - `Recursion`
+  - `Backtracking`
+  
+  - `Greedy`
+  - `Dynamic Programming (DP)`
+  
+  - `OOP Concepts`
+  - `STL` (C++ Standard Template Library) and many more
+  
+  - Extra resources like `DSA-Sheets.txt`
 
 - **Language Used**  
   All solutions are written in **C++**.
+
+---
+
+## 🧠 Competitive Programming
+
+<p align="center">
+  <a href="https://leetcode.com/your-username">
+    <img src="https://img.shields.io/badge/LeetCode-1800+-FFA116?logo=leetcode&logoColor=white" />
+  </a>
+  <a href="https://www.codechef.com/users/your-username">
+    <img src="https://img.shields.io/badge/CodeChef-1600+-5B4638?logo=codechef&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  🟠 <b>LeetCode:</b> 300+ Problems Solved <br>
+  🟤 <b>CodeChef:</b> 3⭐ Coder
+</p>
 
 ---
 
