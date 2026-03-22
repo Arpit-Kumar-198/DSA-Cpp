@@ -44,18 +44,18 @@ This is a collection of everything I’ve practiced and learned over the past **
 
 ## 🧠 Competitive Programming
 
-<p align="center">
-  <a href="https://leetcode.com/your-username">
-    <img src="https://img.shields.io/badge/LeetCode-1800+-FFA116?logo=leetcode&logoColor=white" />
+<p align="start">
+  <a href="https://leetcode.com/u/Arpit_kumar198/">
+    <img src="https://img.shields.io/badge/LeetCode-1600+-FFA116?logo=leetcode&logoColor=white" />
   </a>
-  <a href="https://www.codechef.com/users/your-username">
-    <img src="https://img.shields.io/badge/CodeChef-1600+-5B4638?logo=codechef&logoColor=white" />
+  <a href="https://www.codechef.com/users/binary_dreamer">
+    <img src="https://img.shields.io/badge/CodeChef-1400+-5B4638?logo=codechef&logoColor=white" />
   </a>
 </p>
 
-<p align="center">
+<p align="start">
   🟠 <b>LeetCode:</b> 300+ Problems Solved <br>
-  🟤 <b>CodeChef:</b> 3⭐ Coder
+  🟤 <b>CodeChef:</b> 2⭐ Coder
 </p>
 
 ---
