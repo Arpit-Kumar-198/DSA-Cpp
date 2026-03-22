@@ -14,7 +14,7 @@ void subset(int a[], int n, int idx, vector<int> ans, bool flag)
     int dh = a[idx+1];
     if(ch == dh)
     {
-        if(flag == true) subset(a, n, idx+1, ans, true);
+        if(flag == true) subset(a, n, idx+1, ans, true);    
         ans.push_back(a[idx]);
         subset(a, n, idx+1, ans, false);
     }
