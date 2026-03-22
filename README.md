@@ -46,7 +46,7 @@ This is a collection of everything I’ve practiced and learned over the past **
 
 <p align="start">
   <a href="https://leetcode.com/u/Arpit_kumar198/">
-    <img src="https://img.shields.io/badge/LeetCode-1600+-FFA116?logo=leetcode&logoColor=white" />
+    <img src="https://img.shields.io/badge/LeetCode-1600+-FFA116?logo=leetcode&logoColor=white" style="margin-right: 10px;" />
   </a>
   <a href="https://www.codechef.com/users/binary_dreamer">
     <img src="https://img.shields.io/badge/CodeChef-1400+-5B4638?logo=codechef&logoColor=white" />
@@ -54,7 +54,7 @@ This is a collection of everything I’ve practiced and learned over the past **
 </p>
 
 <p align="start">
-  🟠 <b>LeetCode:</b> 300+ Problems Solved <br><br>
+  🟠 <b>LeetCode:</b> 300+ Problems Solved <br>
   🟤 <b>CodeChef:</b> 2⭐ Coder
 </p>
 
