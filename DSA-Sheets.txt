@@ -6,28 +6,3 @@ https://learnyard.com/practice/dsa
 
 Algomaster
 https://algomaster.io/practice/dsa-patterns
-
-
-Revision Topics :
-
-Greedy
-Heaps
-Math & Prime Number
-Stack and Queue
-Searching
-Sorting
-Prefix Sum
-Sliding Window 
-
-Recursion
-
-
-Topics left to learn in DSA : 
-Tree
-Greedy
-DP
-Graph
-Tries
-Backtracking
-Segment tree
-Bit Manipulation

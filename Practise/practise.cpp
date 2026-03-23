@@ -1,12 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 /*
-    stack
-    queue
-    heap
-    Binary tree
-    BST
-    Heap
+    Revision Topics :
+
+    Heaps
+    Trees
+    Stack and Queue
+    Searching
+
 */
 void func(string s, string temp, vector<string>& ans, int n){
     if(temp.size() == n) {
@@ -19,7 +20,7 @@ void func(string s, string temp, vector<string>& ans, int n){
     }
 }
 int main(){
-    string s = "abcdefghijk";
+    string s = "abcdefghij";
     vector<string> ans;
     string temp = "";
     func(s, temp, ans, s.size());
