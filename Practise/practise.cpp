@@ -19,7 +19,7 @@ void func(string s, string temp, vector<string>& ans, int n){
         func(l + r, temp + s[i], ans, n);
     }
 }
-int main(){
+int main(){Prefix Sum: Solved LeetCode 1590 (Make Sum Divisible by P) using modulo + hashmap optimization
     string s = "abcdefghij";
     vector<string> ans;
     string temp = "";
