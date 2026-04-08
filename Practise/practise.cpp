@@ -9,22 +9,10 @@ using namespace std;
     Searching
 
 */
-void func(string s, string temp, vector<string>& ans, int n){
-    if(temp.size() == n) {
-        ans.push_back(temp);
-        return;
-    }
-    for (int i = 0; i < s.size(); i++){
-        string l = s.substr(0, i), r = s.substr(i + 1);
-        func(l + r, temp + s[i], ans, n);
-    }
-}
-int main(){Prefix Sum: Solved LeetCode 1590 (Make Sum Divisible by P) using modulo + hashmap optimization
-    string s = "abcdefghij";
-    vector<string> ans;
-    string temp = "";
-    func(s, temp, ans, s.size());
-    for(auto ch : ans)
-        cout << ch << endl;
+
+int main(){
+    double x = 45;
+    cout << FLT_MAX << endl;
+
     return 0;
 }

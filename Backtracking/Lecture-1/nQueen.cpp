@@ -51,7 +51,7 @@ int main(){
     cin >> n;
     vector<vector<string>> ans = nQueen(n);
     for(auto v : ans){
-        for(auto str : v)
+        for (auto str : v)
             cout << str << endl;
         cout << endl;
     }

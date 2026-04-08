@@ -23,7 +23,7 @@ void stringPermutations2(string s, int i, vector<string>& ans2){
     }
 }
 int main(){
-    string s = "abcd";
+    string s = "abc";
     vector<string> ans;
     string temp = "";
     cout << "First method (not memory efficient) : " << endl;
