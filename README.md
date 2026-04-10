@@ -49,7 +49,7 @@ This is a collection of everything I’ve practiced and learned over the past **
     <img src="https://img.shields.io/badge/LeetCode-1600+-FFA116?logo=leetcode&logoColor=white" /> 
   </a> 
   <a href="https://www.codechef.com/users/binary_dreamer"> 
-    <img src="https://img.shields.io/badge/CodeChef-1400+-5B4638?logo=codechef&logoColor=white" /> 
+    <img src="https://img.shields.io/badge/CodeChef-1500+-5B4638?logo=codechef&logoColor=white" /> 
   </a> 
 </p>
 
