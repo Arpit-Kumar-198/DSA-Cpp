@@ -1,39 +1,26 @@
-#include<iostream>
-#include<vector>
+#include<bits/stdc++.h>
 using namespace std;
 // subset of string with duplicate char // very very important dry run this to enhance your knowledge.
-void substring(string ans, string original, vector<string>& v, bool flag)
-{
-    if(original == ""){
-       v.push_back(ans);
-         return;
-    }
-    char ch = original[0];
-    if(original.size() == 1)
-    {
-       if(flag == true) substring(ans+ch, original.substr(1), v,true);
-        substring(ans, original.substr(1), v,true);
-        return;
-    }
-    char dh = original[1];
-    if(ch == dh)
-    {
-        if(flag == true) substring(ans+ch, original.substr(1), v,true);
-        substring(ans, original.substr(1), v,false);
-    }
-    else{
 
-        if(flag == true) substring(ans+ch, original.substr(1), v,true);
-        substring(ans, original.substr(1), v,true);
+void solve(int idx, string s, string& t, vector<string>& res){
+    res.push_back(t);
+
+    for (int i = idx; i < s.size(); i++){
+        if(i > idx && s[i] == s[i-1])
+            continue;
+        t.push_back(s[i]);
+        solve(i + 1, s, t, res);
+        t.pop_back();
     }
-    
 }
-int main()
-{
+int main(){
     string s;
     cin >> s;
-    vector<string> v;
-    substring("", s, v, true);
-    for(int i = 0; i < v.size(); i++) cout << v[i] << " ";
+    vector<string> res;
+    sort(s.begin(), s.end());
+    string t = "";
+    solve(0, s, t, res);
+    for(string str : res)
+        cout << str << endl;
     return 0;
 }

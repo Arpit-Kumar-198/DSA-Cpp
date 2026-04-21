@@ -1,33 +1,39 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void subset(int a[], int n, int idx, vector<int> ans, int k)
+void subsequence(int idx, int k, vector<int>& arr, vector<int>& temp, vector<vector<int>>& res)
 {
-    if(idx == n)
+    if(temp.size() == k) res.push_back(temp);
+    
+    for (int i = idx; i < arr.size(); i++)
     {
-        if(ans.size() == k)
-        {
-            for(int i = 0; i < ans.size(); i++) cout << ans[i] << " ";
-        cout << endl;
-        }
-        return;
+        if(i > idx && arr[i] == arr[i-1]) continue;
+        temp.push_back(arr[i]);
+        subsequence(i + 1, k, arr, temp, res);
+        temp.pop_back();
     }
-   subset(a, n, idx+1, ans, k);
-   ans.push_back(a[idx]);
-    subset(a, n, idx+1, ans, k);
 }
 
-    //print all increasing sequence of length k from first n natural numbers.   // 123 = [1,2], [1,3], [2,3] for k = 2
-    // leetcode 78
+/*
+    print all increasing sequence of length k from first n natural numbers.  
+    123 = [1,2], [1,3], [2,3] for k = 2
+*/
+   
+// leetcode 78
+
 int main()
 {
     int n, k;
-    cin >> n;
-    cin >> k;
-    int a[n];
-    for(int i = 0; i < n; i++) a[i] = i+1;
-
-    vector<int> v;
-    subset(a,n,0,v, k);
+    cin >> n >> k;
+    vector<int> arr(n, 0);
+    for (int i = 0; i < n; i++) arr[i] = i + 1;
+    vector<int> temp;
+    vector<vector<int>> res;
+    subsequence(0, k, arr, temp, res);
+    for(auto vec : res){
+        for(int x : vec)
+            cout << x << " ";
+        cout << endl;
+    }
     return 0;
 }
