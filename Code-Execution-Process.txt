@@ -1,0 +1,94 @@
+How C/C++ Code is excuted ?
+######################################################
+
+🔹 1. What is MinGW?
+
+A package for Windows that provides:
+GCC compiler
+linker
+basic tools
+
+👉 Simply:
+MinGW = GCC + tools for Windows
+
+######################################################
+
+🔹 2. What is GCC?
+
+A collection of compilers
+Used to convert code → machine code
+Supports C, C++, etc.
+
+######################################################
+
+
+🔹 3. gcc vs g++
+
+gcc → compiler driver for C
+g++ → compiler driver for C++
+
+👉 Simply:
+gcc = C compiler, g++ = C++ compiler
+
+######################################################
+
+🔹 4. Header files
+
+Examples: stdio.h, math.h, iostream
+
+They contain:
+✔ Function declarations (not definitions)
+✔ Macros
+✔ Types and structures
+
+❌ They do NOT contain actual code of functions like printf, scanf, cout, cin
+
+####################################################################################
+
+🔹 5. Preprocessing stage
+
+Before compilation:
+
+#include → copies header file content
+#define → replaces macros
+Removes comments
+Handles conditional compilation (#ifdef, etc.)
+
+👉 Output: clean source code
+
+######################################################################################
+
+🔹 6. Compilation stage
+
+Checks:
+lexical errors
+syntax errors
+semantic errors
+Converts code → machine-level instructions (object file OR .o file)
+
+✔ Contains:
+machine code of your program
+references to external functions (like printf, scanf)
+
+❌ Does NOT contain actual library function code
+
+######################################################################################
+
+🔹 7. Linking stage
+
+Combines all .o files
+Adds required library code
+
+👉 Two types:
+✔ Static linking → copies library code into executable
+✔ Dynamic linking → keeps reference, OS loads library at runtime
+
+Output: Executable file (.exe on Windows / a.out on Linux)
+
+#######################################################################################
+
+🔹 8. Execution
+
+OS loads .exe into RAM
+CPU executes machine instructions step by step
+Program runs and gives output
