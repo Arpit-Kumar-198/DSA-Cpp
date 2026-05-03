@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
     /*
@@ -18,42 +19,31 @@ int main(){
     int k, l, m;
     cin >> k >> l >> m;
     int n[m];
-    for (int i = 0; i < m; i++)
-        cin >> n[i];
+    for (int i = 0; i < m; i++) cin >> n[i];
 
 
-    vector<int> dp(1000000+1,-1);
+    vector<int> dp(1000000+1,0);
 
-    dp[1] = 1;
-    dp[k] = 1;
-    dp[l] = 1;
+    for (int i = 1; i < dp.size(); i++) {
 
-    for (int i = 2; i <= dp.size(); i++){
-        int a, b, c;
-        if(i-1 >= 0 && i-1 < dp.size())
-            a = dp[i - 1];
-        else
-            a = 1;
+        bool win = false;
 
-        if (i - k >= 0 && i - k < dp.size())
-            b = dp[i - k];
-        else
-            b = 1;
+        if (i - 1 >= 0 && dp[i - 1] == 0)
+            win = true;
 
-        if (i - l >= 0 && i - l < dp.size())
-            c = dp[i - l];
-        else
-            c = 1;
-            
-        if (dp[i] == -1)
-            dp[i] = !(a && b && c);
+        if (i - k >= 0 && dp[i - k] == 0)
+            win = true;
+
+        if (i - l >= 0 && dp[i - l] == 0)
+            win = true;
+
+        dp[i] = win;
     }
 
     for (int i = 0; i < m; i++){
-        if(dp[n[i]] == 1)
-            cout << 'A';
-        else
-            cout << 'B';
+        if(dp[n[i]] == 1) cout << 'A';
+        else cout << 'B';
     }
-        return 0;
+
+    return 0;
 }

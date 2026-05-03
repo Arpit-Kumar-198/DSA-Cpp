@@ -1,18 +1,22 @@
 /*
 Consider a money system consisting of n coins. Each coin has a positive integer value. Your task is to produce a sum of money x using the available coins in such a way that the number of coins is minimal.
 For example, if the coins are \{1,5,7\} and the desired sum is 11, an optimal solution is 5+5+1 which requires 3 coins.
-Input
+
+Input:
 The first input line has two integers n and x: the number of coins and the desired sum of money.
 The second line has n distinct integers c1,c2,....,cn: the value of each coin.
-Output
+
+Output:
 Print one integer: the minimum number of coins. If it is not possible to produce the desired sum, print -1.
-Constraints
+
+Constraints:
 
 1 <= n <= 100
 1 <= x <= 10^6
 1 <= ci <= 10^6
 
-Example
+Example:
+
 Input:
 3 11
 1 5 7
@@ -42,8 +46,7 @@ int minimizeCoins(vector<int>& arr,int x, vector<int>& dp){
         result = min(result, minimizeCoins(arr, x - arr[i], dp));
     }
     if(result == INT_MAX) return dp[x] = INT_MAX;
-    else
-        return dp[x] = 1 + result;
+    else return dp[x] = 1 + result;
 }
 int main(){
 

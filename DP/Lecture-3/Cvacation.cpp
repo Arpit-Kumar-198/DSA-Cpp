@@ -16,8 +16,8 @@
             10 40 70
             20 50 80
             30 60 90
-    Output : 
-             210
+            
+    Output : 210
 
 */
 #include<iostream>

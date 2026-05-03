@@ -19,21 +19,6 @@ void solve(int idx, vector<int>& arr, vector<int>& temp, vector<vector < int >>&
     }
 }
 int main(){
-    int n, k;
-    cin >> n >> k;
-    vector<int> arr(n);
-    for (int i = 0; i < n; i++)
-        cin >> arr[i];
-    vector<int> temp;
-    vector<vector<int>> ans;
-    sort(arr.begin(), arr.end());
-    solve(0, arr, temp, ans, k);
-    cout << "Subsets : " << endl;
-    for (auto vec : ans)
-    {
-        for (int i = 0; i < vec.size(); i++)
-            cout << vec[i] << " ";
-        cout << endl;
-    }
-    return 0;
+    int ch = (int)('\0');
+    cout << ch;
 }
