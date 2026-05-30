@@ -1,0 +1,44 @@
+🔹 1. What is MinGW?
+
+👉 MinGW (Minimalist GNU for Windows) is a software package for Windows that provides a port of the GCC toolchain along with essential development tools.
+
+👉 Simply:
+MinGW = GCC + tools for Windows
+
+################################################################################################
+
+🔹 2. What is GCC?
+
+GCC (GNU Compiler Collection) is a free and open-source compiler system used to compile programming languages like C, C++, and others.
+
+################################################################################################
+
+
+🔹 3. gcc vs g++
+
+gcc → compiler driver for C
+g++ → compiler driver for C++
+
+👉 Simply:
+gcc = C compiler, g++ = C++ compiler
+
+################################################################################################
+
+🔹 4. Header files
+
+Examples: stdio.h, math.h, iostream
+
+They contain:
+✔ Function declarations (not definitions)
+✔ Macros
+✔ Types and structures
+
+❌ They do NOT contain actual code of functions like printf, scanf, cout, cin
+
+################################################################################################
+
+🔹 5. How C++ code is executed ?
+
+The execution process of C++ is similar to C, because both follow the same compilation pipeline.
+
+However, the C++ compiler performs extra internal work to support features like OOP, function overloading, and templates.
