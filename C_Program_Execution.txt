@@ -1,0 +1,40 @@
+📌 Steps of C Program Execution
+##################################################################
+
+C program is written in a file with .c extension
+
+1. Preprocessing
+    Handled by preprocessor
+    Processes directives starting with # like #include, #define
+    Expands header files
+    Expands macros
+    Removes comments
+    Handle the conditional compilation (#ifdef etc)
+
+    Output: .i file (preprocessed code)
+
+2. Compilation
+    Converts preprocessed code into assembly language
+    Checks Lexical, syntax and semantic errors
+
+    Output: .s file
+
+3. Assembler
+    Converts assembly code into machine code (binary)
+    Output: object file .o
+
+4. Linker
+    Combines object files
+    Adds standard library functions (e.g., printf)
+
+    Output: executable file ( .exe (on Windows) or a.out(on Linux) )
+
+5. Loading
+    OS loads executable file into RAM
+    Creates process memory (stack, heap, etc.)
+
+6. Execution
+    CPU executes instructions using:
+    Fetch
+    Decode
+    Execute cycle
