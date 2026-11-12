@@ -11,7 +11,7 @@ int main() {
     for (int i = 0; i < 5; i++) cout << arr[i] << " ";
 
     delete[] arr;  // deallocates the array
-
+    
     cout << endl;
     int (*arr2)[4] = new int[3][4];
     for (int i = 0; i < 3; i++) {
