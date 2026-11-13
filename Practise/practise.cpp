@@ -13,38 +13,33 @@ void move(int n, vector<int>& arr){
     return;
 }
 
-void moveWithOrder(int n, vector<int>& arr){
-    vector<int> pos, neg;
-    for (int i = 0; i < n; i++){
-        if(arr[i] < 0)
-            neg.push_back(arr[i]);
-        else
-            pos.push_back(arr[i]);
-    }
-    int idx;
-    for (idx = 0; idx < pos.size(); idx++)
+void transpose(vector<vector<int>>& arr){
+    int n = arr.size();
+   
+    for (int i = 0; i < n; i++)
     {
-        arr[idx] = pos[idx];
+        for (int j = 0; j <= i; j++)
+            swap(arr[i][j], arr[j][i]);
     }
-    for (int i = 0; i < neg.size(); i++){
-        arr[idx++] = neg[i];
-    }
-        return;
+
+    return;
 }
 
 int main(){
     int n;
     cin >> n;
-    vector<int> arr(n);
+    vector<vector<int>> arr(n, vector<int>(n));
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < n; j++)
+            cin >> arr[i][j];
+    }
+    transpose(arr);
+    cout << endl;
     for (int i = 0; i < n; i++)
-        cin >> arr[i];
-
-    // move(n, arr);
-    moveWithOrder(n, arr);
-
-    for (auto num : arr)
-        cout << num << " ";
-
-
+    {
+        for (int j = 0; j < n; j++)
+            cout << arr[i][j] << " ";
+        cout << endl;
+    }
     return 0;
 } 
